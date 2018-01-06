@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" class=" "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Briso</title>
+
+    <!-- Bootstrap -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- NProgress -->
+    <link href="styles/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="styles/green.css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="styles/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="styles/jqvmap.min.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="styles/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="styles/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="" class="site_title"><i class="fa fa-paw"></i> <span>Briso</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <!-- <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div> -->
+            <!-- /menu profile quick info -->
+
+            <br>
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section active">
+                <ul class="nav side-menu" style="">
+                  <li class="active"><a href="index.html"><i class="fa fa-map-marker"></i> Vessel Location Alert <span class="fa fa-chevron-down"></span></a>
+
+                  </li>
+                  <li><a href="vesselTradePattern.html"><i class="fa fa-ship"></i> Vessel Trade Pattern <span class="fa fa-chevron-down"></span></a>
+
+                  </li>
+                  <li><a href="commodityTracker.html"><i class="fa fa-bullseye"></i> Commodity Tracker <span class="fa fa-chevron-down"></span></a>
+
+                  </li>
+                  <li><a><i class="fa fa-codiepie"></i> Voyage Economy <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="display:none;">
+                      <li><a href="dailyPerformance.html">Daily Performance</a></li>
+                      <li><a href="">Vessel Performance</a></li>
+                      <li><a href="">Fleet Performance</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-building"></i> Corporate <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="display:none;">
+                      <li><a href="">Corporate Overview</a></li>
+                      <li><a href="">Corporate Financial</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-truck"></i>Bahri Oil Transport <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="display:none;">
+                      <li><a href="">BOT Overview</a></li>
+                      <li><a href="">BOT Financial</a></li>
+                      <li><a href="">BOT Operational</a></li>
+                      <li><a href="">BOT Chartering</a></li>
+                    </ul>
+                  </li>
+
+
+                  <li><a><i class="fa fa-clone"></i>Mideast <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="display:none;">
+                      <li><a href="">Mideast Overview</a></li>
+                      <li><a href="">Mideast Financial</a></li>
+                      <li><a href="">Mideast Operational</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-cart-plus"></i>Bahri Chemical Carriers <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="display:none;">
+                      <li><a href="">BCC Overview</a></li>
+                      <li><a href="">BCC Financial</a></li>
+                      <li><a href="">BCC Operational</a></li>
+                      <li><a href="">BCC Chartering</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a><i class="fa fa-cubes"></i>Bahri Dry Bulk <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="display:none;">
+                      <li><a href="">BDB Overview</a></li>
+                      <li><a href="">BDB Financial</a></li>
+                      <li><a href="">BDB Operational</a></li>
+                      <li><a href="">BDB Chartering</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-crosshairs"></i>Bahri General Cargo <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu" style="display:none;">
+                      <li><a href="">BGC Overview</a></li>
+                      <li><a href="">BGC Financial</a></li>
+                      <li><a href="">BGC Operational</a></li>
+                      <li><a href="">BGC Chartering</a></li>
+                    </ul>
+                  </li>
+
+
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings">
+                <span class="fa fa-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="" data-original-title="FullScreen">
+                <span class="fa fa-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Lock">
+                <span class="fa fa-lock" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="" href="" data-original-title="Logout">
+                <span class="fa fa-reset" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">John Doe
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href=""><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+
+
+
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+
+          <div class="row" role="toolbar">
+            <div class="md-col-12"><a class="pull-right" data-toggle="modal" data-target="#exampleModal"><i style="color:orange" class="fa fa-filter fa-2x"> </i></a></div>
+          </div>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+
+                <div class="modal-header bg-primary">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+
+                  <h2 class="modal-title" id="exampleModalLabel">Filer</h2>
+                </div>
+                <div class="modal-body">
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+
+                </div>
+                <div class="modal-footer">
+
+                  <button type="button" class="btn btn-primary">Apply</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<br />
+
+
+
+<div class="row">
+
+<div class="col-md-4">
+  <table class="table well">
+  <tbody><tr><td class="bg-primary">Mewis <br />Duct</td><td class="name"><b class="ng-binding">No</b></td></tr>
+  <tr><td class="bg-primary">Hull Coating Type
+  </td><td class="name ng-binding">
+  Intersleek 757 - International Paint</td></tr>
+  <tr><td class="bg-primary">Last Dry Dock
+  </td><td class="name ng-binding">2017-09-03</td></tr>
+  <tr><td class="bg-primary">Next Dry <br>Dock</td><td class="name ng-binding">2020-04-03</td></tr></tbody></table>
+</div>
+
+
+<div class="col-md-4">
+  <table class="table well"><tbody><tr><td class="bg-primary">Voyage <Br> Order Speed</td><td class="name ng-binding">12</td></tr>
+    <tr><td class="bg-primary">Draft</td><td class="name ng-binding">10.1</td></tr>
+    <tr><td class="bg-primary">Wind Force</td><td class="name ng-binding">3</td></tr>
+    <tr><td class="bg-primary">Vessel <br>State </td><td class="name ng-binding">Ballast
+  </td></tr></tbody></table>
+
+</div>
+
+<div class="col-md-4">
+
+  <table class="table well"><tbody><tr><td class="bg-primary">Voyage Manager</td><td class="name ng-binding">KHALED</td></tr>
+    <tr><td class="bg-primary">Superintendent</td><td class="name ng-binding">Ramesh Nagaraju</td></tr>
+    <tr><td class="bg-primary">Master </td><td class="name ng-binding">ALI MOHAMMED ALI WAEL</td></tr>
+  <tr><td class="bg-primary">Chief Engineer
+  </td><td class="name ng-binding">
+  SALEH ABDELRAHMAN MOHAMED A. ALY</td></tr></tbody></table>
+</div>
+
+
+</div>
+
+
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Status</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Route</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Analytics</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+
+<Br>
+      <div class="alert bg-orange">
+For Main Engine MIPS, Marorka and IMOS are not matching.
+      </div>
+
+      <div class="alert bg-orange">
+For Total Consumption MIPS, Marorka and IMOS are not matching.
+</div>
+
+
+<table class="table well"><tbody><tr class="bg-primary"><td class="ng-binding">2018-01-05</td><td colspan="2">Fuel Consumption (MT/24h)
+</td><td colspan="3">Speed (Knot/24h)</td></tr><tr><td>Status</td><td><div class="circleBase background-red"></div></td><td><div class="circleBase background-red"></div></td><td><div class="circleBase background-green"></div></td><td><div class="circleBase background-green"></div></td><td><div class="circleBase background-green"></div></td></tr><tr><td>
+</td><td>Main Engine</td><td>Total Consumption</td><td>GPS Speed</td><td>Log Speed</td><td>Avg Speed</td></tr><!-- ngRepeat: (index,data) in vm.table1data track by $index --><tr ng-repeat="(index,data) in vm.table1data track by $index" class="ng-scope"><td class="name ng-binding">MIPS</td><td class="name ">46</td><td class="name ">59</td><td class="name ">0</td><td class="name ">
+0</td><td class="name ">12.33</td></tr><!-- end ngRepeat: (index,data) in vm.table1data track by $index --><tr ng-repeat="(index,data) in vm.table1data track by $index" class="ng-scope"><td class="name ng-binding">Marorka</td><td class="name ">NA</td><td class="name ">NA</td><td class="name ">NA</td><td class="name ">
+NA</td><td class="name ">NA</td></tr><!-- end ngRepeat: (index,data) in vm.table1data track by $index --><tr ng-repeat="(index,data) in vm.table1data track by $index" class="ng-scope"><td class="name ng-binding">IMOS</td><td class="name ">NA</td><td class="name ">NA</td><td class="name ">NA</td><td class="name ">
+NA</td><td class="name ">NA</td></tr><!-- end ngRepeat: (index,data) in vm.table1data track by $index --></tbody></table>
+
+
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  </div>
+
+</div>
+
+
+          <!-- /top tiles -->
+
+
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="scripts/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="scripts/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="scripts/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="scripts/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="scripts/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="scripts/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="scripts/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="scripts/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="scripts/skycons.js"></script>
+    <!-- Flot -->
+    <script src="scripts/jquery.flot.js"></script>
+    <script src="scripts/jquery.flot.pie.js"></script>
+    <script src="scripts/jquery.flot.time.js"></script>
+    <script src="scripts/jquery.flot.stack.js"></script>
+    <script src="scripts/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="scripts/jquery.flot.orderBars.js"></script>
+    <script src="scripts/jquery.flot.spline.min.js"></script>
+    <script src="scripts/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="scripts/date.js"></script>
+    <!-- JQVMap -->
+    <script src="scripts/jquery.vmap.js"></script>
+    <script src="scripts/jquery.vmap.world.js"></script>
+    <script src="scripts/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="scripts/moment.min.js"></script>
+    <script src="scripts/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="scripts/custom.min.js"></script>
+<!-- Google Analytics -->
+
+
+
+<div class="jqvmap-label" style="display: none;"></div><div class="daterangepicker dropdown-menu ltr opensleft"><div class="calendar left"><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_start" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="calendar right"><div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_end" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i><div class="calendar-time" style="display: none;"><div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div></div><div class="calendar-table"></div></div><div class="ranges"><ul><li data-range-key="Today">Today</li><li data-range-key="Yesterday">Yesterday</li><li data-range-key="Last 7 Days">Last 7 Days</li><li data-range-key="Last 30 Days">Last 30 Days</li><li data-range-key="This Month">This Month</li><li data-range-key="Last Month">Last Month</li><li data-range-key="Custom">Custom</li></ul><div class="range_inputs"><button class="applyBtn btn btn-default btn-small btn-primary" disabled="disabled" type="button">Submit</button> <button class="cancelBtn btn btn-default btn-small" type="button">Clear</button></div></div></div></body></html>
