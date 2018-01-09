@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" class=" ">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Meta, title, CSS, favicons, etc. -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Briso</title>
+
+	<!-- Bootstrap -->
+	<link href="styles/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="styles/font-awesome.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+	<!-- NProgress -->
+	<link href="styles/nprogress.css" rel="stylesheet">
+	<!-- iCheck -->
+	<link href="styles/green.css" rel="stylesheet">
+
+	<!-- bootstrap-progressbar -->
+	<link href="styles/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+	<!-- JQVMap -->
+	<link href="styles/jqvmap.min.css" rel="stylesheet">
+	<!-- bootstrap-daterangepicker -->
+	<link href="styles/daterangepicker.css" rel="stylesheet">
+
+	<!-- Custom Theme Style -->
+	<link href="styles/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+	<div class="container body">
+		<div class="main_container">
+			<div class="col-md-3 left_col">
+				<div class="left_col scroll-view">
+					<div class="navbar nav_title" style="border: 0;">
+						<a href="" class="site_title"><i class="fa fa-paw"></i> <span>Briso</span></a>
+					</div>
+
+					<div class="clearfix"></div>
+
+
+					<!-- sidebar menu -->
+					<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+						<div class="menu_section active">
+							<ul class="nav side-menu" style="">
+								<li class="active"><a href="index.html"><i class="fa fa-map-marker"></i> Vessel Location Alert <span class="fa fa-chevron-down"></span></a>
+
+								</li>
+								<li><a href="vesselTradePattern.html"><i class="fa fa-ship"></i> Vessel Trade Pattern <span class="fa fa-chevron-down"></span></a>
+
+								</li>
+								<li><a href="commodityTracker.html"><i class="fa fa-bullseye"></i> Commodity Tracker <span class="fa fa-chevron-down"></span></a>
+
+								</li>
+								<li><a><i class="fa fa-codiepie"></i> Voyage Economy <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display:none;">
+										<li><a href="dailyPerformance.html">Daily Performance</a></li>
+										<li><a href="">Vessel Performance</a></li>
+										<li><a href="">Fleet Performance</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-building"></i> Corporate <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display:none;">
+										<li><a href="">Corporate Overview</a></li>
+										<li><a href="">Corporate Financial</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-truck"></i>Bahri Oil Transport <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display:none;">
+										<li><a href="">BOT Overview</a></li>
+										<li><a href="">BOT Financial</a></li>
+										<li><a href="">BOT Operational</a></li>
+										<li><a href="">BOT Chartering</a></li>
+									</ul>
+								</li>
+
+
+								<li><a><i class="fa fa-clone"></i>Mideast <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display:none;">
+										<li><a href="">Mideast Overview</a></li>
+										<li><a href="">Mideast Financial</a></li>
+										<li><a href="">Mideast Operational</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-cart-plus"></i>Bahri Chemical Carriers <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display:none;">
+										<li><a href="">BCC Overview</a></li>
+										<li><a href="">BCC Financial</a></li>
+										<li><a href="">BCC Operational</a></li>
+										<li><a href="">BCC Chartering</a></li>
+									</ul>
+								</li>
+
+								<li><a><i class="fa fa-cubes"></i>Bahri Dry Bulk <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display:none;">
+										<li><a href="">BDB Overview</a></li>
+										<li><a href="">BDB Financial</a></li>
+										<li><a href="">BDB Operational</a></li>
+										<li><a href="">BDB Chartering</a></li>
+									</ul>
+								</li>
+								<li><a><i class="fa fa-crosshairs"></i>Bahri General Cargo <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display:none;">
+										<li><a href="">BGC Overview</a></li>
+										<li><a href="">BGC Financial</a></li>
+										<li><a href="">BGC Operational</a></li>
+										<li><a href="">BGC Chartering</a></li>
+									</ul>
+								</li>
+
+
+							</ul>
+						</div>
+
+					</div>
+					<!-- /sidebar menu -->
+
+					<!-- /menu footer buttons -->
+					<div class="sidebar-footer hidden-small">
+						<a data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings">
+                <span class="fa fa-cog" aria-hidden="true"></span>
+              </a>
+						<a data-toggle="tooltip" data-placement="top" title="" data-original-title="FullScreen">
+                <span class="fa fa-fullscreen" aria-hidden="true"></span>
+              </a>
+						<a data-toggle="tooltip" data-placement="top" title="" data-original-title="Lock">
+                <span class="fa fa-lock" aria-hidden="true"></span>
+              </a>
+						<a data-toggle="tooltip" data-placement="top" title="" href="" data-original-title="Logout">
+                <span class="fa fa-reset" aria-hidden="true"></span>
+              </a>
+					</div>
+					<!-- /menu footer buttons -->
+				</div>
+			</div>
+
+			<!-- top navigation -->
+			<div class="top_nav">
+				<div class="nav_menu">
+					<nav>
+						<div class="nav toggle">
+							<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+						</div>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li class="">
+								<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">John Doe
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+								<ul class="dropdown-menu dropdown-usermenu pull-right">
+									<li><a href="javascript:;"> Profile</a></li>
+									<li>
+										<a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+									</li>
+									<li><a href="javascript:;">Help</a></li>
+									<li><a href=""><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+								</ul>
+							</li>
+
+							<li role="presentation" class="dropdown">
+								<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+								<ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+									<li>
+										<a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+
+                        </span>
+                      </a>
+									</li>
+									<li>
+										<a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                        </span>
+                      </a>
+									</li>
+									<li>
+										<a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                        </span>
+                      </a>
+									</li>
+									<li>
+										<a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                        </span>
+                      </a>
+									</li>
+									<li>
+										<div class="text-center">
+											<a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- /top navigation -->
+
+			<!-- page content -->
+			<div class="right_col" role="main">
+				<!-- top tiles -->
+
+				<div class="row" role="toolbar">
+					<div class="md-col-12">
+						<a class="pull-right" data-toggle="modal" data-target="#exampleModal">
+              <i style="color:orange" class="fa fa-filter fa-2x"> </i>
+            </a>
+					</div>
+				</div>
+
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+
+							<div class="modal-header bg-primary">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+
+								<h2 class="modal-title" id="exampleModalLabel">Filer</h2>
+							</div>
+							<div class="modal-body">
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+
+							</div>
+							<div class="modal-footer">
+
+								<button type="button" class="btn btn-primary">Apply</button>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+<br><Br>
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="md-whiteframe-4dp" style="background-color:#fff; padding:10px; text-align:center;">
+							<div class="card md-card-margin-top-bottom-none chart-block layout-wrap" layout-wrap="">
+								<div class="md-title card-title chart-block">
+									YTD Consumption Laden<br>(MT/24h)
+                </div>
+								<div id="ytd-loaded-consumption" class="activity-graph-container" data-highcharts-chart="22">
+									<div id="highcharts-phtpn3z-61" dir="ltr" style="position: relative; overflow: hidden; height: 150px; text-align: center; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                    <svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" height="150" viewBox="0 0 210 150">
+                      <desc>Created with Highcharts 6.0.4</desc>
+                      <defs>
+                        <clipPath id="highcharts-phtpn3z-62">
+                          <rect x="0" y="0" width="190" height="150" fill="none"></rect>
+                        </clipPath>
+                      </defs>
+                      <rect fill="#ffffff" class="highcharts-background" x="0" y="0"  height="150" rx="0" ry="0"></rect>
+                      <rect fill="none" class="highcharts-plot-background" x="10" y="0" width="190" height="150"></rect>
+                      <g class="highcharts-plot-bands-0">
+                        <path fill="#B4C7D2" class="highcharts-plot-band highcharts-pane" d="M 105 3.5999999999999943 A 71.4 71.4 0 1 1 104.92860001189996 3.600035699997022 M 104.94390000934997 18.90002804999766 A 56.1 56.1 0 1 0 105 18.9 "></path><path fill="#B4C7D2" class="highcharts-plot-band highcharts-pane" d="M 105 3.5999999999999943 A 71.4 71.4 0 1 1 104.92860001189996 3.600035699997022 M 104.94390000934997 18.90002804999766 A 56.1 56.1 0 1 0 105 18.9 "></path></g><g class="highcharts-grid highcharts-yaxis-grid "></g><rect fill="none" class="highcharts-plot-border" x="10" y="0" width="190" height="150"></rect><g class="highcharts-axis highcharts-yaxis ">
+                      <path fill="none" class="highcharts-axis-line" d="M 105 11.25 A 63.75 63.75 0 1 1 104.93625001062496 11.25003187499734 M 105 75 A 0 0 0 1 0 105 75 "></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-solidgauge-series highcharts-tracker" transform="translate(10,0) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-62)"><path fill="#09486b" d="M 95 11.25 A 63.75 63.75 0 0 1 145.27490883709845 114.198163750633 L 145.27490883709845 114.198163750633 A 63.75 63.75 0 0 0 95 11.25 Z" class="highcharts-point" sweep-flag="0" stroke="#09486B" stroke-width="15.3"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-solidgauge-series " transform="translate(10,0) scale(1 1)" clip-path="none"></g></g><text x="105" text-anchor="middle" class="highcharts-title" style="color:#333333;font-size:14px;fill:#333333;" y="11"></text><text x="105" text-anchor="middle" class="highcharts-subtitle" style="color:#666666;fill:#666666;" y="14"></text><g class="highcharts-legend"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="8" height="8" visibility="hidden"></rect><g><g></g></g></g><g class="highcharts-axis-labels highcharts-yaxis-labels "></g></svg></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="md-whiteframe-4dp" style="background-color:#fff; padding:10px; text-align:center;">
+							<div class="card md-card-margin-top-bottom-none chart-block layout-wrap" layout-wrap="">
+								<div class="md-title card-title chart-block">
+									YTD Speed Ballast<br>(Knots/24h)</div>
+								<div id="ytd-speed" class="activity-graph-container" data-highcharts-chart="23">
+									<div id="highcharts-phtpn3z-63" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; width: 210px; height: 150px; text-align: center; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg"  height="150" viewBox="0 0 210 150"><desc>Created with Highcharts 6.0.4</desc><defs><clipPath id="highcharts-phtpn3z-64"><rect x="0" y="0" width="190" height="150" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0"  height="150" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="10" y="0" width="190" height="150"></rect><g class="highcharts-plot-bands-0"><path fill="#B4C7D2" class="highcharts-plot-band highcharts-pane" d="M 105 3.5999999999999943 A 71.4 71.4 0 1 1 104.92860001189996 3.600035699997022 M 104.94390000934997 18.90002804999766 A 56.1 56.1 0 1 0 105 18.9 "></path><path fill="#B4C7D2" class="highcharts-plot-band highcharts-pane" d="M 105 3.5999999999999943 A 71.4 71.4 0 1 1 104.92860001189996 3.600035699997022 M 104.94390000934997 18.90002804999766 A 56.1 56.1 0 1 0 105 18.9 "></path></g><g class="highcharts-grid highcharts-yaxis-grid "></g><rect fill="none" class="highcharts-plot-border" x="10" y="0" width="190" height="150"></rect><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 105 11.25 A 63.75 63.75 0 1 1 104.93625001062496 11.25003187499734 M 105 75 A 0 0 0 1 0 105 75 "></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-solidgauge-series highcharts-tracker" transform="translate(10,0) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-64)"><path fill="#09486b" d="M 95 11.25 A 63.75 63.75 0 1 1 31.516095893280337 69.18137306842736 L 31.516095893280337 69.18137306842736 A 63.75 63.75 0 1 0 95 11.25 Z" class="highcharts-point" sweep-flag="0" stroke="#09486B" stroke-width="15.3"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-solidgauge-series " transform="translate(10,0) scale(1 1)" clip-path="none"></g></g><text x="105" text-anchor="middle" class="highcharts-title" style="color:#333333;font-size:14px;fill:#333333;" y="11"></text><text x="105" text-anchor="middle" class="highcharts-subtitle" style="color:#666666;fill:#666666;" y="14"></text><g class="highcharts-legend"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="8" height="8" visibility="hidden"></rect><g><g></g></g></g><g class="highcharts-axis-labels highcharts-yaxis-labels "></g></svg></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="md-whiteframe-4dp" style="background-color:#fff; padding:10px; text-align:center;">
+							<div class="card md-card-margin-top-bottom-none chart-block layout-wrap" layout-wrap="">
+								<div class="md-title card-title chart-block">
+									YTD Speed Laden<br>(Knots/24h)</div>
+								<div id="ytd-loaded-speed" class="activity-graph-container" data-highcharts-chart="24">
+									<div id="highcharts-phtpn3z-65" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; height: 150px; text-align: center; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg"  height="150" viewBox="0 0 210 150"><desc>Created with Highcharts 6.0.4</desc><defs><clipPath id="highcharts-phtpn3z-66"><rect x="0" y="0" width="190" height="150" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0"  height="150" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="10" y="0" width="190" height="150"></rect><g class="highcharts-plot-bands-0"><path fill="#B4C7D2" class="highcharts-plot-band highcharts-pane" d="M 105 3.5999999999999943 A 71.4 71.4 0 1 1 104.92860001189996 3.600035699997022 M 104.94390000934997 18.90002804999766 A 56.1 56.1 0 1 0 105 18.9 "></path><path fill="#B4C7D2" class="highcharts-plot-band highcharts-pane" d="M 105 3.5999999999999943 A 71.4 71.4 0 1 1 104.92860001189996 3.600035699997022 M 104.94390000934997 18.90002804999766 A 56.1 56.1 0 1 0 105 18.9 "></path></g><g class="highcharts-grid highcharts-yaxis-grid "></g><rect fill="none" class="highcharts-plot-border" x="10" y="0" width="190" height="150"></rect><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 105 11.25 A 63.75 63.75 0 1 1 104.93625001062496 11.25003187499734 M 105 75 A 0 0 0 1 0 105 75 "></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-solidgauge-series highcharts-tracker" transform="translate(10,0) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-66)"><path fill="#09486b" d="M 95 11.25 A 63.75 63.75 0 1 1 33.70109191863204 92.50732326862108 L 33.70109191863204 92.50732326862108 A 63.75 63.75 0 1 0 95 11.25 Z" class="highcharts-point" sweep-flag="0" stroke="#09486B" stroke-width="15.3"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-solidgauge-series " transform="translate(10,0) scale(1 1)" clip-path="none"></g></g><text x="105" text-anchor="middle" class="highcharts-title" style="color:#333333;font-size:14px;fill:#333333;" y="11"></text><text x="105" text-anchor="middle" class="highcharts-subtitle" style="color:#666666;fill:#666666;" y="14"></text><g class="highcharts-legend"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="8" height="8" visibility="hidden"></rect><g><g></g></g></g><g class="highcharts-axis-labels highcharts-yaxis-labels "></g></svg></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="md-whiteframe-4dp" style="background-color:#fff; padding:10px; text-align:center;">
+							<div class="card md-card-margin-top-bottom-none chart-block layout-wrap" layout-wrap="">
+								<div class="md-title card-title chart-block">
+									YTD Savings<br>(MT)</div>
+								<div id="ytd-savings" class="activity-graph-container" data-highcharts-chart="25">
+									<div id="highcharts-phtpn3z-67" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; height: 150px; text-align: center; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg"  height="150" viewBox="0 0 210 150"><desc>Created with Highcharts 6.0.4</desc><defs><clipPath id="highcharts-phtpn3z-68"><rect x="0" y="0" width="190" height="150" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0"  height="150" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="10" y="0" width="190" height="150"></rect><g class="highcharts-plot-bands-0"><path fill="#B4C7D2" class="highcharts-plot-band highcharts-pane" d="M 105 3.5999999999999943 A 71.4 71.4 0 1 1 104.92860001189996 3.600035699997022 M 104.94390000934997 18.90002804999766 A 56.1 56.1 0 1 0 105 18.9 "></path><path fill="#B4C7D2" class="highcharts-plot-band highcharts-pane" d="M 105 3.5999999999999943 A 71.4 71.4 0 1 1 104.92860001189996 3.600035699997022 M 104.94390000934997 18.90002804999766 A 56.1 56.1 0 1 0 105 18.9 "></path></g><g class="highcharts-grid highcharts-yaxis-grid "></g><rect fill="none" class="highcharts-plot-border" x="10" y="0" width="190" height="150"></rect><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 105 11.25 A 63.75 63.75 0 1 1 104.93625001062496 11.25003187499734 M 105 75 A 0 0 0 1 0 105 75 "></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-solidgauge-series highcharts-tracker" transform="translate(10,0) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-68)"><path fill="#09486b" d="M 95 11.25 A 63.75 63.75 0 0 1 98.13940421205075 11.32734777635411 L 98.13940421205075 11.32734777635411 A 63.75 63.75 0 0 0 95 11.25 Z" class="highcharts-point" sweep-flag="0" stroke="#09486B" stroke-width="15.3"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-solidgauge-series " transform="translate(10,0) scale(1 1)" clip-path="none"></g></g><text x="105" text-anchor="middle" class="highcharts-title" style="color:#333333;font-size:14px;fill:#333333;" y="11"></text><text x="105" text-anchor="middle" class="highcharts-subtitle" style="color:#666666;fill:#666666;" y="14"></text><g class="highcharts-legend"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="8" height="8" visibility="hidden"></rect><g><g></g></g></g><g class="highcharts-axis-labels highcharts-yaxis-labels "></g></svg></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<div class="row">
+
+
+					<div class="col-md-12">
+						<div class="card card-header">
+							<h2 class="page-title">Fuel Consumption Performance</h2>
+						</div>
+						<div class="card md-card-margin-top-bottom-none">
+							<div layout="row" layout-align="center center" ng-show="vm.circularLoader" class="layout-align-center-center layout-row ng-hide" aria-hidden="true" style="">
+								<md-progress-circular md-mode="indeterminate" md-diameter="80" class="md-warn ng-scope md-default-theme" aria-valuemin="0" aria-valuemax="100" role="progressbar" style="width: 80px; height: 80px;">
+									<div class="md-scale-wrapper md-mode-indeterminate" style="transform: translate(-50%, -50%) scale(0.8);">
+										<div class="md-spinner-wrapper">
+											<div class="md-inner">
+												<div class="md-gap"></div>
+												<div class="md-left">
+													<div class="md-half-circle"></div>
+												</div>
+												<div class="md-right">
+													<div class="md-half-circle"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</md-progress-circular>
+							</div>
+							<div id="fuel-consumption-container" class="graph-container" ng-hide="vm.circularLoader" aria-hidden="false" style="" data-highcharts-chart="29">
+								<div id="highcharts-phtpn3z-86" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden;  height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" height="400" width="100%"><desc>Created with Highcharts 6.0.4</desc><defs><clipPath id="highcharts-phtpn3z-87"><rect x="0" y="0" width="993" height="268" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" height="400" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="39" y="10" width="993" height="268"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 72.5 10 L 72.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 106.5 10 L 106.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 141.5 10 L 141.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 175.5 10 L 175.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 209.5 10 L 209.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 243.5 10 L 243.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 278.5 10 L 278.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 312.5 10 L 312.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 346.5 10 L 346.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 380.5 10 L 380.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 415.5 10 L 415.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 449.5 10 L 449.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 483.5 10 L 483.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 517.5 10 L 517.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 552.5 10 L 552.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 586.5 10 L 586.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 620.5 10 L 620.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 654.5 10 L 654.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 689.5 10 L 689.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 723.5 10 L 723.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 757.5 10 L 757.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 791.5 10 L 791.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 826.5 10 L 826.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 860.5 10 L 860.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 894.5 10 L 894.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 928.5 10 L 928.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 963.5 10 L 963.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 997.5 10 L 997.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 1031.5 10 L 1031.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 38.5 10 L 38.5 278" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 39 278.5 L 1032 278.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 39 211.5 L 1032 211.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 39 144.5 L 1032 144.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 39 77.5 L 1032 77.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 39 9.5 L 1032 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="39" y="10" width="993" height="268"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 72.5 278 L 72.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 106.5 278 L 106.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 141.5 278 L 141.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 175.5 278 L 175.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 209.5 278 L 209.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 243.5 278 L 243.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 278.5 278 L 278.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 312.5 278 L 312.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 346.5 278 L 346.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 380.5 278 L 380.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 415.5 278 L 415.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 449.5 278 L 449.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 483.5 278 L 483.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 517.5 278 L 517.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 552.5 278 L 552.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 586.5 278 L 586.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 620.5 278 L 620.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 654.5 278 L 654.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 689.5 278 L 689.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 723.5 278 L 723.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 757.5 278 L 757.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 791.5 278 L 791.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 826.5 278 L 826.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 860.5 278 L 860.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 894.5 278 L 894.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 928.5 278 L 928.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 963.5 278 L 963.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 997.5 278 L 997.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 1032.5 278 L 1032.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 38.5 278 L 38.5 288" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 39 278.5 L 1032 278.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 39 10 L 39 278"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-line-series highcharts-color-0 " transform="translate(39,10) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-87)"><path fill="none" d="M 17.120689655172 268 L 51.362068965517 268 L 85.603448275862 268 L 119.84482758621 268 L 154.08620689655 268 L 188.3275862069 268 L 222.56896551724 268 L 256.81034482759 268 L 291.05172413793 268 L 325.29310344828 268 L 359.53448275862 268 L 393.77586206897 268 L 428.01724137931 268 L 462.25862068966 268 L 496.5 268 L 530.74137931034 268 L 564.98275862069 268 L 599.22413793103 268 L 633.46551724138 268 L 667.70689655172 268 L 701.94827586207 268 L 736.18965517241 268 L 770.43103448276 268 L 804.6724137931 268 L 838.91379310345 268 L 873.15517241379 268 L 907.39655172414 268 L 941.63793103448 147.39999999999998 L 975.87931034483 144.05" class="highcharts-graph" stroke="#ff6600" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 7.120689655172001 268 L 17.120689655172 268 L 51.362068965517 268 L 85.603448275862 268 L 119.84482758621 268 L 154.08620689655 268 L 188.3275862069 268 L 222.56896551724 268 L 256.81034482759 268 L 291.05172413793 268 L 325.29310344828 268 L 359.53448275862 268 L 393.77586206897 268 L 428.01724137931 268 L 462.25862068966 268 L 496.5 268 L 530.74137931034 268 L 564.98275862069 268 L 599.22413793103 268 L 633.46551724138 268 L 667.70689655172 268 L 701.94827586207 268 L 736.18965517241 268 L 770.43103448276 268 L 804.6724137931 268 L 838.91379310345 268 L 873.15517241379 268 L 907.39655172414 268 L 941.63793103448 147.39999999999998 L 975.87931034483 144.05 L 985.87931034483 144.05" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class="highcharts-tracker"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-line-series highcharts-color-0 highcharts-tracker" transform="translate(39,10) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-88)"><path fill="#ff6600" d="M 21 268 A 4 4 0 1 1 20.99999800000017 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 55 268 A 4 4 0 1 1 54.99999800000017 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 89 268 A 4 4 0 1 1 88.99999800000016 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 123 268 A 4 4 0 1 1 122.99999800000016 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 158 268 A 4 4 0 1 1 157.99999800000018 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 192 268 A 4 4 0 1 1 191.99999800000018 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 226 268 A 4 4 0 1 1 225.99999800000018 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 260 268 A 4 4 0 1 1 259.9999980000002 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 295 268 A 4 4 0 1 1 294.9999980000002 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 329 268 A 4 4 0 1 1 328.9999980000002 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 363 268 A 4 4 0 1 1 362.9999980000002 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 397 268 A 4 4 0 1 1 396.9999980000002 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 432 268 A 4 4 0 1 1 431.9999980000002 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 466 268 A 4 4 0 1 1 465.9999980000002 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 500 268 A 4 4 0 1 1 499.9999980000002 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 534 268 A 4 4 0 1 1 533.9999980000001 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 568 268 A 4 4 0 1 1 567.9999980000001 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 603 268 A 4 4 0 1 1 602.9999980000001 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 637 268 A 4 4 0 1 1 636.9999980000001 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 671 268 A 4 4 0 1 1 670.9999980000001 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 705 268 A 4 4 0 1 1 704.9999980000001 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 740 268 A 4 4 0 1 1 739.9999980000001 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 774 268 A 4 4 0 1 1 773.9999980000001 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 808 268 A 4 4 0 1 1 807.9999980000001 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 842 268 A 4 4 0 1 1 841.9999980000001 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 877 268 A 4 4 0 1 1 876.9999980000001 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 911 268 A 4 4 0 1 1 910.9999980000001 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 945 147 A 4 4 0 1 1 944.9999980000001 146.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#ff6600" d="M 979 144 A 4 4 0 1 1 978.9999980000001 143.99600000066667 Z" class="highcharts-point highcharts-color-0"></path></g><g class="highcharts-series highcharts-series-1 highcharts-line-series highcharts-color-1 " transform="translate(39,10) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-87)"><path fill="none" d="M 17.120689655172 117.25 L 51.362068965517 117.25 L 85.603448275862 107.19999999999999 L 119.84482758621 97.15 L 154.08620689655 100.5 L 188.3275862069 174.2 L 222.56896551724 77.04999999999998 L 256.81034482759 100.5 L 291.05172413793 80.4 L 325.29310344828 63.650000000000006 L 359.53448275862 157.45 L 393.77586206897 164.14999999999998 L 428.01724137931 123.94999999999999 L 462.25862068966 107.19999999999999 L 496.5 130.65 L 530.74137931034 247.9 L 564.98275862069 268 L 599.22413793103 268 L 633.46551724138 268 L 667.70689655172 123.94999999999999 L 701.94827586207 123.94999999999999 L 736.18965517241 130.65 L 770.43103448276 130.65 L 804.6724137931 167.5 L 838.91379310345 180.89999999999998 L 873.15517241379 268 L 907.39655172414 268 L 941.63793103448 177.55 L 975.87931034483 160.8" class="highcharts-graph" stroke="#09486B" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 7.120689655172001 117.25 L 17.120689655172 117.25 L 51.362068965517 117.25 L 85.603448275862 107.19999999999999 L 119.84482758621 97.15 L 154.08620689655 100.5 L 188.3275862069 174.2 L 222.56896551724 77.04999999999998 L 256.81034482759 100.5 L 291.05172413793 80.4 L 325.29310344828 63.650000000000006 L 359.53448275862 157.45 L 393.77586206897 164.14999999999998 L 428.01724137931 123.94999999999999 L 462.25862068966 107.19999999999999 L 496.5 130.65 L 530.74137931034 247.9 L 564.98275862069 268 L 599.22413793103 268 L 633.46551724138 268 L 667.70689655172 123.94999999999999 L 701.94827586207 123.94999999999999 L 736.18965517241 130.65 L 770.43103448276 130.65 L 804.6724137931 167.5 L 838.91379310345 180.89999999999998 L 873.15517241379 268 L 907.39655172414 268 L 941.63793103448 177.55 L 975.87931034483 160.8 L 985.87931034483 160.8" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class="highcharts-tracker"></path></g><g class="highcharts-markers highcharts-series-1 highcharts-line-series highcharts-color-1 highcharts-tracker" transform="translate(39,10) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-88)"><path fill="#09486B" d="M 17 113 L 21 117 17 121 13 117 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 51 113 L 55 117 51 121 47 117 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 85 103 L 89 107 85 111 81 107 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 119 93 L 123 97 119 101 115 97 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 154 97 L 158 101 154 105 150 101 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 188 170 L 192 174 188 178 184 174 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 222 73 L 226 77 222 81 218 77 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 256 97 L 260 101 256 105 252 101 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 291 76 L 295 80 291 84 287 80 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 325 60 L 329 64 325 68 321 64 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 359 153 L 363 157 359 161 355 157 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 393 160 L 397 164 393 168 389 164 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 428 120 L 432 124 428 128 424 124 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 462 103 L 466 107 462 111 458 107 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 496 127 L 500 131 496 135 492 131 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 530 244 L 534 248 530 252 526 248 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 564 264 L 568 268 564 272 560 268 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 599 264 L 603 268 599 272 595 268 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 633 264 L 637 268 633 272 629 268 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 667 120 L 671 124 667 128 663 124 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 701 120 L 705 124 701 128 697 124 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 736 127 L 740 131 736 135 732 131 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 770 127 L 774 131 770 135 766 131 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 804 164 L 808 168 804 172 800 168 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 838 177 L 842 181 838 185 834 181 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 873 264 L 877 268 873 272 869 268 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 907 264 L 911 268 907 272 903 268 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 941 174 L 945 178 941 182 937 178 Z" class="highcharts-point highcharts-color-1"></path><path fill="#09486B" d="M 975 157 L 979 161 975 165 971 161 Z" class="highcharts-point highcharts-color-1"></path></g></g><text x="521" text-anchor="middle" class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><text x="521" text-anchor="middle" class="highcharts-subtitle" style="color:#666666;fill:#666666;" y="24"></text><g class="highcharts-legend" transform="translate(820,356)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="212" height="29" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-line-series highcharts-color-0 highcharts-series-0" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#ff6600" stroke-width="2"></path><path fill="#ff6600" d="M 12 11 A 4 4 0 1 1 11.999998000000167 10.996000000666664 Z" class="highcharts-point"></path><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15"><tspan>Baseline</tspan></text></g><g class="highcharts-legend-item highcharts-line-series highcharts-color-1 highcharts-series-1" transform="translate(98.6875,3)"><path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#09486B" stroke-width="2"></path><path fill="#09486B" d="M 8 7 L 12 11 8 15 4 11 Z" class="highcharts-point"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start"><tspan>ME Consumed</tspan></text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="58.713414519523084" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 58.713414519523084 294)" y="294" opacity="1"><tspan>2017-12-10</tspan></text><text x="92.95479382986791" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 92.95479382986791 294)" y="294" opacity="1"><tspan>2017-12-11</tspan></text><text x="127.19617314021275" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 127.19617314021275 294)" y="294" opacity="1"><tspan>2017-12-12</tspan></text><text x="161.43755245055758" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 161.43755245055758 294)" y="294" opacity="1"><tspan>2017-12-13</tspan></text><text x="195.6789317609024" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 195.6789317609024 294)" y="294" opacity="1"><tspan>2017-12-14</tspan></text><text x="229.92031107124723" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 229.92031107124723 294)" y="294" opacity="1"><tspan>2017-12-15</tspan></text><text x="264.16169038159205" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 264.16169038159205 294)" y="294" opacity="1"><tspan>2017-12-16</tspan></text><text x="298.4030696919368" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 298.4030696919368 294)" y="294" opacity="1"><tspan>2017-12-17</tspan></text><text x="332.6444490022817" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 332.6444490022817 294)" y="294" opacity="1"><tspan>2017-12-18</tspan></text><text x="366.8858283126265" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 366.8858283126265 294)" y="294" opacity="1"><tspan>2017-12-19</tspan></text><text x="401.12720762297135" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 401.12720762297135 294)" y="294" opacity="1"><tspan>2017-12-20</tspan></text><text x="435.3685869333161" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 435.3685869333161 294)" y="294" opacity="1"><tspan>2017-12-21</tspan></text><text x="469.609966243661" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 469.609966243661 294)" y="294" opacity="1"><tspan>2017-12-22</tspan></text><text x="503.8513455540058" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 503.8513455540058 294)" y="294" opacity="1"><tspan>2017-12-23</tspan></text><text x="538.0927248643507" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 538.0927248643507 294)" y="294" opacity="1"><tspan>2017-12-24</tspan></text><text x="572.3341041746954" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 572.3341041746954 294)" y="294" opacity="1"><tspan>2017-12-25</tspan></text><text x="606.5754834850403" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 606.5754834850403 294)" y="294" opacity="1"><tspan>2017-12-26</tspan></text><text x="640.8168627953851" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 640.8168627953851 294)" y="294" opacity="1"><tspan>2017-12-27</tspan></text><text x="675.05824210573" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 675.05824210573 294)" y="294" opacity="1"><tspan>2017-12-28</tspan></text><text x="709.2996214160747" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 709.2996214160747 294)" y="294" opacity="1"><tspan>2017-12-29</tspan></text><text x="743.5410007264196" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 743.5410007264196 294)" y="294" opacity="1"><tspan>2017-12-30</tspan></text><text x="777.7823800367644" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 777.7823800367644 294)" y="294" opacity="1"><tspan>2017-12-31</tspan></text><text x="812.0237593471093" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 812.0237593471093 294)" y="294" opacity="1"><tspan>2018-01-01</tspan></text><text x="846.265138657454" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 846.265138657454 294)" y="294" opacity="1"><tspan>2018-01-02</tspan></text><text x="880.5065179677989" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 880.5065179677989 294)" y="294" opacity="1"><tspan>2018-01-03</tspan></text><text x="914.7478972781437" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 914.7478972781437 294)" y="294" opacity="1"><tspan>2018-01-04</tspan></text><text x="948.9892765884886" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 948.9892765884886 294)" y="294" opacity="1"><tspan>2018-01-05</tspan></text><text x="983.2306558988333" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 983.2306558988333 294)" y="294" opacity="1"><tspan>2018-01-06</tspan></text><text x="1017.4720352091782" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 1017.4720352091782 294)" y="294" opacity="1"><tspan>2018-01-07</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="282" opacity="1"><tspan>0</tspan></text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="215" opacity="1"><tspan>20</tspan></text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="148" opacity="1"><tspan>40</tspan></text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="81" opacity="1"><tspan>60</tspan></text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1"><tspan>80</tspan></text></g></svg></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<br>
+				<div class="row">
+
+					<div class="col-md-12">
+						<div class="card card-header">
+							<h2 class="page-title">Comparison with sister ships
+
+							</h2>
+						</div>
+						<div class="card md-card-margin-top-bottom-none">
+							<div layout="row" layout-align="center center" ng-show="vm.circularLoader" class="layout-align-center-center layout-row ng-hide" aria-hidden="true" style="">
+								<md-progress-circular md-mode="indeterminate" md-diameter="80" class="md-warn ng-scope md-default-theme" aria-valuemin="0" aria-valuemax="100" role="progressbar" style="width: 80px; height: 80px;">
+									<div class="md-scale-wrapper md-mode-indeterminate" style="transform: translate(-50%, -50%) scale(0.8);">
+										<div class="md-spinner-wrapper">
+											<div class="md-inner">
+												<div class="md-gap"></div>
+												<div class="md-left">
+													<div class="md-half-circle"></div>
+												</div>
+												<div class="md-right">
+													<div class="md-half-circle"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</md-progress-circular>
+							</div>
+							<div id="fuel-consumption-new-sister-ship-container" class="graph-container">
+								<div id="highcharts-phtpn3z-94" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; width:100%;  height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+									<svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg"  height="400" width="100%"><desc>Created with Highcharts 6.0.4</desc><defs><clipPath id="highcharts-phtpn3z-95"><rect x="0" y="0" width="993" height="268" fill="none"></rect></clipPath></defs><rect fill="#ffffff" class="highcharts-background" x="0" y="0" height="400" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="39" y="10" width="993" height="268"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" class="highcharts-grid-line" d="M 72.5 10 L 72.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 106.5 10 L 106.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 141.5 10 L 141.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 175.5 10 L 175.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 209.5 10 L 209.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 243.5 10 L 243.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 278.5 10 L 278.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 312.5 10 L 312.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 346.5 10 L 346.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 380.5 10 L 380.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 415.5 10 L 415.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 449.5 10 L 449.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 483.5 10 L 483.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 517.5 10 L 517.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 552.5 10 L 552.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 586.5 10 L 586.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 620.5 10 L 620.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 654.5 10 L 654.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 689.5 10 L 689.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 723.5 10 L 723.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 757.5 10 L 757.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 791.5 10 L 791.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 826.5 10 L 826.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 860.5 10 L 860.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 894.5 10 L 894.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 928.5 10 L 928.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 963.5 10 L 963.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 997.5 10 L 997.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 1031.5 10 L 1031.5 278" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 38.5 10 L 38.5 278" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 39 278.5 L 1032 278.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 39 211.5 L 1032 211.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 39 144.5 L 1032 144.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 39 77.5 L 1032 77.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 39 9.5 L 1032 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="39" y="10" width="993" height="268"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 72.5 278 L 72.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 106.5 278 L 106.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 141.5 278 L 141.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 175.5 278 L 175.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 209.5 278 L 209.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 243.5 278 L 243.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 278.5 278 L 278.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 312.5 278 L 312.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 346.5 278 L 346.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 380.5 278 L 380.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 415.5 278 L 415.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 449.5 278 L 449.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 483.5 278 L 483.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 517.5 278 L 517.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 552.5 278 L 552.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 586.5 278 L 586.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 620.5 278 L 620.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 654.5 278 L 654.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 689.5 278 L 689.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 723.5 278 L 723.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 757.5 278 L 757.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 791.5 278 L 791.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 826.5 278 L 826.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 860.5 278 L 860.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 894.5 278 L 894.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 928.5 278 L 928.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 963.5 278 L 963.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 997.5 278 L 997.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 1032.5 278 L 1032.5 288" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 38.5 278 L 38.5 288" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 39 278.5 L 1032 278.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 39 10 L 39 278"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-line-series highcharts-color-0 " transform="translate(39,10) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-95)"><path fill="none" d="M 17.120689655172 160.8 L 51.362068965517 160.8 L 85.603448275862 164.14999999999998 L 119.84482758621 201 L 154.08620689655 268 L 188.3275862069 268 L 222.56896551724 187.6 L 256.81034482759 211.05 L 291.05172413793 268 L 325.29310344828 268 L 359.53448275862 268 L 393.77586206897 261.3 L 428.01724137931 264.65 L 462.25862068966 264.65 L 496.5 107.19999999999999 L 530.74137931034 113.9 L 564.98275862069 110.54999999999998 L 599.22413793103 113.9 L 633.46551724138 117.25 L 667.70689655172 127.29999999999998 L 701.94827586207 123.94999999999999 L 736.18965517241 113.9 L 770.43103448276 120.6 L 804.6724137931 120.6 L 838.91379310345 117.25 L 873.15517241379 113.9 L 907.39655172414 107.19999999999999 L 941.63793103448 107.19999999999999 L 975.87931034483 190.95" class="highcharts-graph" stroke="#4A5E85" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 7.120689655172001 160.8 L 17.120689655172 160.8 L 51.362068965517 160.8 L 85.603448275862 164.14999999999998 L 119.84482758621 201 L 154.08620689655 268 L 188.3275862069 268 L 222.56896551724 187.6 L 256.81034482759 211.05 L 291.05172413793 268 L 325.29310344828 268 L 359.53448275862 268 L 393.77586206897 261.3 L 428.01724137931 264.65 L 462.25862068966 264.65 L 496.5 107.19999999999999 L 530.74137931034 113.9 L 564.98275862069 110.54999999999998 L 599.22413793103 113.9 L 633.46551724138 117.25 L 667.70689655172 127.29999999999998 L 701.94827586207 123.94999999999999 L 736.18965517241 113.9 L 770.43103448276 120.6 L 804.6724137931 120.6 L 838.91379310345 117.25 L 873.15517241379 113.9 L 907.39655172414 107.19999999999999 L 941.63793103448 107.19999999999999 L 975.87931034483 190.95 L 985.87931034483 190.95" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class="highcharts-tracker"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-line-series highcharts-color-0 highcharts-tracker" transform="translate(39,10) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-96)"><path fill="#4A5E85" d="M 21 161 A 4 4 0 1 1 20.99999800000017 160.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 55 161 A 4 4 0 1 1 54.99999800000017 160.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 89 164 A 4 4 0 1 1 88.99999800000016 163.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 123 201 A 4 4 0 1 1 122.99999800000016 200.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 158 268 A 4 4 0 1 1 157.99999800000018 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 192 268 A 4 4 0 1 1 191.99999800000018 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 226 188 A 4 4 0 1 1 225.99999800000018 187.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 260 211 A 4 4 0 1 1 259.9999980000002 210.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 295 268 A 4 4 0 1 1 294.9999980000002 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 329 268 A 4 4 0 1 1 328.9999980000002 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 363 268 A 4 4 0 1 1 362.9999980000002 267.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 397 261 A 4 4 0 1 1 396.9999980000002 260.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 432 265 A 4 4 0 1 1 431.9999980000002 264.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 466 265 A 4 4 0 1 1 465.9999980000002 264.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 500 107 A 4 4 0 1 1 499.9999980000002 106.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 534 114 A 4 4 0 1 1 533.9999980000001 113.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 568 111 A 4 4 0 1 1 567.9999980000001 110.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 603 114 A 4 4 0 1 1 602.9999980000001 113.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 637 117 A 4 4 0 1 1 636.9999980000001 116.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 671 127 A 4 4 0 1 1 670.9999980000001 126.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 705 124 A 4 4 0 1 1 704.9999980000001 123.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 740 114 A 4 4 0 1 1 739.9999980000001 113.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 774 121 A 4 4 0 1 1 773.9999980000001 120.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 808 121 A 4 4 0 1 1 807.9999980000001 120.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 842 117 A 4 4 0 1 1 841.9999980000001 116.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 877 114 A 4 4 0 1 1 876.9999980000001 113.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 911 107 A 4 4 0 1 1 910.9999980000001 106.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 945 107 A 4 4 0 1 1 944.9999980000001 106.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#4A5E85" d="M 979 191 A 4 4 0 1 1 978.9999980000001 190.99600000066667 Z" class="highcharts-point highcharts-color-0"></path></g><g class="highcharts-series highcharts-series-1 highcharts-line-series highcharts-color-1 " transform="translate(39,10) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-95)"><path fill="none" d="M 17.120689655172 257.95 L 51.362068965517 268 L 85.603448275862 268 L 119.84482758621 268 L 154.08620689655 268 L 188.3275862069 261.3 L 222.56896551724 251.25 L 256.81034482759 241.2 L 291.05172413793 268 L 325.29310344828 264.65 L 359.53448275862 97.15 L 393.77586206897 103.85 L 428.01724137931 87.1 L 462.25862068966 90.44999999999999 L 496.5 83.75 L 530.74137931034 77.04999999999998 L 564.98275862069 80.4 L 599.22413793103 80.4 L 633.46551724138 87.1 L 667.70689655172 80.4 L 701.94827586207 80.4 L 736.18965517241 87.1 L 770.43103448276 73.69999999999999 L 804.6724137931 77.04999999999998 L 838.91379310345 90.44999999999999 L 873.15517241379 97.15 L 907.39655172414 87.1 L 941.63793103448 87.1 L 975.87931034483 90.44999999999999" class="highcharts-graph" stroke="#62A39C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 7.120689655172001 257.95 L 17.120689655172 257.95 L 51.362068965517 268 L 85.603448275862 268 L 119.84482758621 268 L 154.08620689655 268 L 188.3275862069 261.3 L 222.56896551724 251.25 L 256.81034482759 241.2 L 291.05172413793 268 L 325.29310344828 264.65 L 359.53448275862 97.15 L 393.77586206897 103.85 L 428.01724137931 87.1 L 462.25862068966 90.44999999999999 L 496.5 83.75 L 530.74137931034 77.04999999999998 L 564.98275862069 80.4 L 599.22413793103 80.4 L 633.46551724138 87.1 L 667.70689655172 80.4 L 701.94827586207 80.4 L 736.18965517241 87.1 L 770.43103448276 73.69999999999999 L 804.6724137931 77.04999999999998 L 838.91379310345 90.44999999999999 L 873.15517241379 97.15 L 907.39655172414 87.1 L 941.63793103448 87.1 L 975.87931034483 90.44999999999999 L 985.87931034483 90.44999999999999" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class="highcharts-tracker"></path></g><g class="highcharts-markers highcharts-series-1 highcharts-line-series highcharts-color-1 highcharts-tracker" transform="translate(39,10) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-96)"><path fill="#62A39C" d="M 17 254 L 21 258 17 262 13 258 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 51 264 L 55 268 51 272 47 268 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 85 264 L 89 268 85 272 81 268 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 119 264 L 123 268 119 272 115 268 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 154 264 L 158 268 154 272 150 268 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 188 257 L 192 261 188 265 184 261 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 222 247 L 226 251 222 255 218 251 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 256 237 L 260 241 256 245 252 241 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 291 264 L 295 268 291 272 287 268 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 325 261 L 329 265 325 269 321 265 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 359 93 L 363 97 359 101 355 97 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 393 100 L 397 104 393 108 389 104 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 428 83 L 432 87 428 91 424 87 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 462 86 L 466 90 462 94 458 90 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 496 80 L 500 84 496 88 492 84 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 530 73 L 534 77 530 81 526 77 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 564 76 L 568 80 564 84 560 80 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 599 76 L 603 80 599 84 595 80 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 633 83 L 637 87 633 91 629 87 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 667 76 L 671 80 667 84 663 80 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 701 76 L 705 80 701 84 697 80 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 736 83 L 740 87 736 91 732 87 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 770 70 L 774 74 770 78 766 74 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 804 73 L 808 77 804 81 800 77 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 838 86 L 842 90 838 94 834 90 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 873 93 L 877 97 873 101 869 97 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 907 83 L 911 87 907 91 903 87 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 941 83 L 945 87 941 91 937 87 Z" class="highcharts-point highcharts-color-1"></path><path fill="#62A39C" d="M 975 86 L 979 90 975 94 971 90 Z" class="highcharts-point highcharts-color-1"></path></g><g class="highcharts-series highcharts-series-2 highcharts-line-series highcharts-color-2 " transform="translate(39,10) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-95)"><path fill="none" d="M 17.120689655172 174.2 L 51.362068965517 174.2 L 85.603448275862 167.5 L 119.84482758621 164.14999999999998 L 154.08620689655 167.5 L 188.3275862069 170.85 L 222.56896551724 164.14999999999998 L 256.81034482759 154.1 L 291.05172413793 167.5 L 325.29310344828 268 L 359.53448275862 264.65 L 393.77586206897 268 L 428.01724137931 160.8 L 462.25862068966 268 L 496.5 268 L 530.74137931034 268 L 564.98275862069 268 L 599.22413793103 167.5 L 633.46551724138 147.39999999999998 L 667.70689655172 130.65 L 701.94827586207 117.25 L 736.18965517241 113.9 L 770.43103448276 103.85 L 804.6724137931 110.54999999999998 L 838.91379310345 103.85 L 873.15517241379 87.1 L 907.39655172414 87.1 L 941.63793103448 83.75 L 975.87931034483 87.1" class="highcharts-graph" stroke="#ff6600" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 7.120689655172001 174.2 L 17.120689655172 174.2 L 51.362068965517 174.2 L 85.603448275862 167.5 L 119.84482758621 164.14999999999998 L 154.08620689655 167.5 L 188.3275862069 170.85 L 222.56896551724 164.14999999999998 L 256.81034482759 154.1 L 291.05172413793 167.5 L 325.29310344828 268 L 359.53448275862 264.65 L 393.77586206897 268 L 428.01724137931 160.8 L 462.25862068966 268 L 496.5 268 L 530.74137931034 268 L 564.98275862069 268 L 599.22413793103 167.5 L 633.46551724138 147.39999999999998 L 667.70689655172 130.65 L 701.94827586207 117.25 L 736.18965517241 113.9 L 770.43103448276 103.85 L 804.6724137931 110.54999999999998 L 838.91379310345 103.85 L 873.15517241379 87.1 L 907.39655172414 87.1 L 941.63793103448 83.75 L 975.87931034483 87.1 L 985.87931034483 87.1" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class="highcharts-tracker"></path></g><g class="highcharts-markers highcharts-series-2 highcharts-line-series highcharts-color-2 highcharts-tracker" transform="translate(39,10) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-96)"><path fill="#ff6600" d="M 13 170 L 21 170 21 178 13 178 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 47 170 L 55 170 55 178 47 178 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 81 164 L 89 164 89 172 81 172 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 115 160 L 123 160 123 168 115 168 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 150 164 L 158 164 158 172 150 172 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 184 167 L 192 167 192 175 184 175 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 218 160 L 226 160 226 168 218 168 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 252 150 L 260 150 260 158 252 158 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 287 164 L 295 164 295 172 287 172 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 321 264 L 329 264 329 272 321 272 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 355 261 L 363 261 363 269 355 269 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 389 264 L 397 264 397 272 389 272 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 424 157 L 432 157 432 165 424 165 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 458 264 L 466 264 466 272 458 272 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 492 264 L 500 264 500 272 492 272 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 526 264 L 534 264 534 272 526 272 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 560 264 L 568 264 568 272 560 272 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 595 164 L 603 164 603 172 595 172 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 629 143 L 637 143 637 151 629 151 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 663 127 L 671 127 671 135 663 135 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 697 113 L 705 113 705 121 697 121 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 732 110 L 740 110 740 118 732 118 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 766 100 L 774 100 774 108 766 108 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 800 107 L 808 107 808 115 800 115 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 834 100 L 842 100 842 108 834 108 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 869 83 L 877 83 877 91 869 91 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 903 83 L 911 83 911 91 903 91 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 937 80 L 945 80 945 88 937 88 Z" class="highcharts-point highcharts-color-2"></path><path fill="#ff6600" d="M 971 83 L 979 83 979 91 971 91 Z" class="highcharts-point highcharts-color-2"></path></g><g class="highcharts-series highcharts-series-3 highcharts-line-series highcharts-color-3 " transform="translate(39,10) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-95)"><path fill="none" d="M 17.120689655172 134 L 51.362068965517 123.94999999999999 L 85.603448275862 123.94999999999999 L 119.84482758621 174.2 L 154.08620689655 147.39999999999998 L 188.3275862069 167.5 L 222.56896551724 113.9 L 256.81034482759 103.85 L 291.05172413793 103.85 L 325.29310344828 107.19999999999999 L 359.53448275862 107.19999999999999 L 393.77586206897 120.6 L 428.01724137931 120.6 L 462.25862068966 113.9 L 496.5 123.94999999999999 L 530.74137931034 120.6 L 564.98275862069 123.94999999999999 L 599.22413793103 113.9 L 633.46551724138 137.35 L 667.70689655172 127.29999999999998 L 701.94827586207 130.65 L 736.18965517241 80.4 L 770.43103448276 120.6 L 804.6724137931 123.94999999999999 L 838.91379310345 154.1 L 873.15517241379 140.7 L 907.39655172414 127.29999999999998 L 941.63793103448 130.65 L 975.87931034483 268" class="highcharts-graph" stroke="#09486B" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 7.120689655172001 134 L 17.120689655172 134 L 51.362068965517 123.94999999999999 L 85.603448275862 123.94999999999999 L 119.84482758621 174.2 L 154.08620689655 147.39999999999998 L 188.3275862069 167.5 L 222.56896551724 113.9 L 256.81034482759 103.85 L 291.05172413793 103.85 L 325.29310344828 107.19999999999999 L 359.53448275862 107.19999999999999 L 393.77586206897 120.6 L 428.01724137931 120.6 L 462.25862068966 113.9 L 496.5 123.94999999999999 L 530.74137931034 120.6 L 564.98275862069 123.94999999999999 L 599.22413793103 113.9 L 633.46551724138 137.35 L 667.70689655172 127.29999999999998 L 701.94827586207 130.65 L 736.18965517241 80.4 L 770.43103448276 120.6 L 804.6724137931 123.94999999999999 L 838.91379310345 154.1 L 873.15517241379 140.7 L 907.39655172414 127.29999999999998 L 941.63793103448 130.65 L 975.87931034483 268 L 985.87931034483 268" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class="highcharts-tracker"></path></g><g class="highcharts-markers highcharts-series-3 highcharts-line-series highcharts-color-3 highcharts-tracker" transform="translate(39,10) scale(1 1)" clip-path="url(https://briso.bahri.sa/components/voyage-economy/vessel/msma00000237#highcharts-phtpn3z-96)"><path fill="#09486B" d="M 17 130 L 21 138 13 138 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 51 120 L 55 128 47 128 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 85 120 L 89 128 81 128 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 119 170 L 123 178 115 178 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 154 143 L 158 151 150 151 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 188 164 L 192 172 184 172 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 222 110 L 226 118 218 118 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 256 100 L 260 108 252 108 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 291 100 L 295 108 287 108 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 325 103 L 329 111 321 111 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 359 103 L 363 111 355 111 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 393 117 L 397 125 389 125 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 428 117 L 432 125 424 125 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 462 110 L 466 118 458 118 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 496 120 L 500 128 492 128 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 530 117 L 534 125 526 125 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 564 120 L 568 128 560 128 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 599 110 L 603 118 595 118 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 633 133 L 637 141 629 141 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 667 123 L 671 131 663 131 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 701 127 L 705 135 697 135 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 736 76 L 740 84 732 84 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 770 117 L 774 125 766 125 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 804 120 L 808 128 800 128 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 838 150 L 842 158 834 158 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 873 137 L 877 145 869 145 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 907 123 L 911 131 903 131 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 941 127 L 945 135 937 135 Z" class="highcharts-point highcharts-color-3"></path><path fill="#09486B" d="M 975 264 L 979 272 971 272 Z" class="highcharts-point highcharts-color-3"></path></g></g><text x="521" text-anchor="middle" class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><text x="521" text-anchor="middle" class="highcharts-subtitle" style="color:#666666;fill:#666666;" y="24"></text><g class="highcharts-legend" transform="translate(664,356)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="368" height="29" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-line-series highcharts-color-0 highcharts-series-0" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#4A5E85" stroke-width="2"></path><path fill="#4A5E85" d="M 12 11 A 4 4 0 1 1 11.999998000000167 10.996000000666664 Z" class="highcharts-point"></path><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15"><tspan>SHADEN</tspan></text></g><g class="highcharts-legend-item highcharts-line-series highcharts-color-1 highcharts-series-1" transform="translate(98.75,3)"><path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#62A39C" stroke-width="2"></path><path fill="#62A39C" d="M 8 7 L 12 11 8 15 4 11 Z" class="highcharts-point"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start"><tspan>ASLAF</tspan></text></g><g class="highcharts-legend-item highcharts-line-series highcharts-color-2 highcharts-series-2" transform="translate(178.71875,3)"><path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#ff6600" stroke-width="2"></path><path fill="#ff6600" d="M 4 7 L 12 7 12 15 4 15 Z" class="highcharts-point"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start"><tspan>RIMTHAN</tspan></text></g><g class="highcharts-legend-item highcharts-line-series highcharts-color-3 highcharts-series-3" transform="translate(276.625,3)"><path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#09486B" stroke-width="2"></path><path fill="#09486B" d="M 8 7 L 12 15 4 15 Z" class="highcharts-point"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start"><tspan>MAHARAH</tspan></text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="58.713414519523084" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 58.713414519523084 294)" y="294" opacity="1"><tspan>2017-12-10</tspan></text><text x="92.95479382986791" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 92.95479382986791 294)" y="294" opacity="1"><tspan>2017-12-11</tspan></text><text x="127.19617314021275" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 127.19617314021275 294)" y="294" opacity="1"><tspan>2017-12-12</tspan></text><text x="161.43755245055758" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 161.43755245055758 294)" y="294" opacity="1"><tspan>2017-12-13</tspan></text><text x="195.6789317609024" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 195.6789317609024 294)" y="294" opacity="1"><tspan>2017-12-14</tspan></text><text x="229.92031107124723" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 229.92031107124723 294)" y="294" opacity="1"><tspan>2017-12-15</tspan></text><text x="264.16169038159205" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 264.16169038159205 294)" y="294" opacity="1"><tspan>2017-12-16</tspan></text><text x="298.4030696919368" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 298.4030696919368 294)" y="294" opacity="1"><tspan>2017-12-17</tspan></text><text x="332.6444490022817" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 332.6444490022817 294)" y="294" opacity="1"><tspan>2017-12-18</tspan></text><text x="366.8858283126265" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 366.8858283126265 294)" y="294" opacity="1"><tspan>2017-12-19</tspan></text><text x="401.12720762297135" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 401.12720762297135 294)" y="294" opacity="1"><tspan>2017-12-20</tspan></text><text x="435.3685869333161" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 435.3685869333161 294)" y="294" opacity="1"><tspan>2017-12-21</tspan></text><text x="469.609966243661" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 469.609966243661 294)" y="294" opacity="1"><tspan>2017-12-22</tspan></text><text x="503.8513455540058" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 503.8513455540058 294)" y="294" opacity="1"><tspan>2017-12-23</tspan></text><text x="538.0927248643507" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 538.0927248643507 294)" y="294" opacity="1"><tspan>2017-12-24</tspan></text><text x="572.3341041746954" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 572.3341041746954 294)" y="294" opacity="1"><tspan>2017-12-25</tspan></text><text x="606.5754834850403" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 606.5754834850403 294)" y="294" opacity="1"><tspan>2017-12-26</tspan></text><text x="640.8168627953851" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 640.8168627953851 294)" y="294" opacity="1"><tspan>2017-12-27</tspan></text><text x="675.05824210573" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 675.05824210573 294)" y="294" opacity="1"><tspan>2017-12-28</tspan></text><text x="709.2996214160747" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 709.2996214160747 294)" y="294" opacity="1"><tspan>2017-12-29</tspan></text><text x="743.5410007264196" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 743.5410007264196 294)" y="294" opacity="1"><tspan>2017-12-30</tspan></text><text x="777.7823800367644" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 777.7823800367644 294)" y="294" opacity="1"><tspan>2017-12-31</tspan></text><text x="812.0237593471093" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 812.0237593471093 294)" y="294" opacity="1"><tspan>2018-01-01</tspan></text><text x="846.265138657454" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 846.265138657454 294)" y="294" opacity="1"><tspan>2018-01-02</tspan></text><text x="880.5065179677989" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 880.5065179677989 294)" y="294" opacity="1"><tspan>2018-01-03</tspan></text><text x="914.7478972781437" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 914.7478972781437 294)" y="294" opacity="1"><tspan>2018-01-04</tspan></text><text x="948.9892765884886" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 948.9892765884886 294)" y="294" opacity="1"><tspan>2018-01-05</tspan></text><text x="983.2306558988333" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 983.2306558988333 294)" y="294" opacity="1"><tspan>2018-01-06</tspan></text><text x="1017.4720352091782" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0) rotate(-45 1017.4720352091782 294)" y="294" opacity="1"><tspan>2018-01-07</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="282" opacity="1"><tspan>0</tspan></text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="215" opacity="1"><tspan>20</tspan></text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="148" opacity="1"><tspan>40</tspan></text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="81" opacity="1"><tspan>60</tspan></text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1"><tspan>80</tspan></text></g></svg></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+				<!-- /top tiles -->
+
+
+			</div>
+			<!-- /page content -->
+
+			<!-- footer content -->
+			<footer>
+				<div class="pull-right">
+
+				</div>
+				<div class="clearfix"></div>
+			</footer>
+			<!-- /footer content -->
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="scripts/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="scripts/bootstrap.min.js"></script>
+	<!-- FastClick -->
+	<script src="scripts/fastclick.js"></script>
+	<!-- NProgress -->
+	<script src="scripts/nprogress.js"></script>
+	<!-- Chart.js -->
+	<script src="scripts/Chart.min.js"></script>
+	<!-- gauge.js -->
+	<script src="scripts/gauge.min.js"></script>
+	<!-- bootstrap-progressbar -->
+	<script src="scripts/bootstrap-progressbar.min.js"></script>
+	<!-- iCheck -->
+	<script src="scripts/icheck.min.js"></script>
+	<!-- Skycons -->
+	<script src="scripts/skycons.js"></script>
+	<!-- Flot -->
+	<script src="scripts/jquery.flot.js"></script>
+	<script src="scripts/jquery.flot.pie.js"></script>
+	<script src="scripts/jquery.flot.time.js"></script>
+	<script src="scripts/jquery.flot.stack.js"></script>
+	<script src="scripts/jquery.flot.resize.js"></script>
+	<!-- Flot plugins -->
+	<script src="scripts/jquery.flot.orderBars.js"></script>
+	<script src="scripts/jquery.flot.spline.min.js"></script>
+	<script src="scripts/curvedLines.js"></script>
+	<!-- DateJS -->
+	<script src="scripts/date.js"></script>
+	<!-- JQVMap -->
+	<script src="scripts/jquery.vmap.js"></script>
+	<script src="scripts/jquery.vmap.world.js"></script>
+	<script src="scripts/jquery.vmap.sampledata.js"></script>
+	<!-- bootstrap-daterangepicker -->
+	<script src="scripts/moment.min.js"></script>
+	<script src="scripts/daterangepicker.js"></script>
+
+	<!-- Custom Theme Scripts -->
+	<script src="scripts/custom.min.js"></script>
+	<!-- Google Analytics -->
+
+
+
+	<div class="jqvmap-label" style="display: none;"></div>
+	<div class="daterangepicker dropdown-menu ltr opensleft">
+		<div class="calendar left">
+			<div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_start" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+				<div class="calendar-time" style="display: none;">
+					<div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div>
+			</div>
+			<div class="calendar-table"></div>
+		</div>
+		<div class="calendar right">
+			<div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_end" value=""><i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+				<div class="calendar-time" style="display: none;">
+					<div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i></div>
+			</div>
+			<div class="calendar-table"></div>
+		</div>
+		<div class="ranges">
+			<ul>
+				<li data-range-key="Today">Today</li>
+				<li data-range-key="Yesterday">Yesterday</li>
+				<li data-range-key="Last 7 Days">Last 7 Days</li>
+				<li data-range-key="Last 30 Days">Last 30 Days</li>
+				<li data-range-key="This Month">This Month</li>
+				<li data-range-key="Last Month">Last Month</li>
+				<li data-range-key="Custom">Custom</li>
+			</ul>
+			<div class="range_inputs"><button class="applyBtn btn btn-default btn-small btn-primary" disabled="disabled" type="button">Submit</button> <button class="cancelBtn btn btn-default btn-small" type="button">Clear</button></div>
+		</div>
+	</div>
+</body>
+
+</html>
